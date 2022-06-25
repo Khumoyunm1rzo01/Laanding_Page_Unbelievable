@@ -1,0 +1,755 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Landing PAGE Html5 Template">
+    <meta name="keywords" content="landing,startup,flat">
+    <meta name="author" content="Made By GN DESIGNS">
+    <title>Vortex - Startup Landing Page</title>
+    <!-- // PLUGINS (css files) // -->
+
+    <link href="{% static 'assets/js/plugins/bootsnav_files/skins/color.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/bootsnav_files/css/animate.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/bootsnav_files/css/bootsnav.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/bootsnav_files/css/overwrite.cs'%}s" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/owl-carousel/owl.carousel.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/owl-carousel/owl.theme.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/owl-carousel/owl.transitions.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/js/plugins/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css'%}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!--======================================== 
+
+           Preloader
+
+    ========================================-->
+    <div class="page-preloader">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
+    <!--======================================== 
+
+           Header
+
+    ========================================-->
+
+
+
+    <!--//** Navigation**//-->
+    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+        <div class="container">
+
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#brand">
+                    <img src="{% static 'assets/img/logo.png'%}" class="logo" alt="logo">
+                </a>
+            </div>
+
+            <!-- End Header Navigation -->
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active scroll"><a href="#home">{{ house.house }}</a></li>
+                    <li class="scroll"><a href="#about">{{ haqida.haqida }}</a></li>
+                    <li class="scroll"><a href="#services">{{ hizmatlar.hizmatlar }}</a></li>
+                    <li class="scroll"><a href="#price">{{ narhlar.narhlar }}</a></li>
+                    <li class="scroll"><a href="#team">{{ jamoa.jamoa }}</a></li>
+                    <li class="scroll"><a href="#clients">{{ klient.klient }}</a></li>
+                    <li class="scroll"><a href="#contact">{{ boglanish.boglanish }}</a></li>
+                    <li class="button-holder">
+                        <button type="button" class="btn btn-blue navbar-btn" data-toggle="modal" data-target="#SignIn">{{ kirish.kirish }}</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+
+    <!--//** Banner**//-->
+
+    <section id="home">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Introduction -->
+
+                <div class="col-md-6 caption">
+
+                    <h1>{{ hello.hello }}</h1>
+                    <h2>
+
+                           I am 
+
+                            <span class="animated-text"></span>
+
+                            <span class="typed-cursor"></span>
+
+                        </h2>
+
+                    <p>I'm a Full-Stack Developer. Now I'm studying in the phylology of russian of Andizhan State University. If you have any ideas to improve my Web-Site You can contact me by my Telegram adress <a href="https://t.me/UzbekTiger1108">@UzbekTiger1108</a>, <a href="https://t.me/BoyMirzo1108">@BoyMirzo1108</a> or by my phone number: +99899-905-08-11, +99890-200-99-75</p>
+
+                    <a href="#" class="btn btn-transparent">Get Started</a>
+
+                    <a class="btn btn-blue popup-youtube" href="https://www.youtube.com/watch?v=Q8TXgCzxEnw">
+
+                        <i class="material-icons">play_circle_filled</i>Watch Video
+
+                    </a>
+
+                </div>
+
+                <!-- Sign Up -->
+
+                <div class="col-md-5 col-md-offset-1">
+
+                    <form class="signup-form">
+
+                        <h2 class="text-center">{{ ulanish1.ulanish1 }}</h2>
+
+                        <hr>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Полное имя" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" placeholder="Email адресс" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Имя" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Пароль" required="required">
+
+                        </div>
+
+                        <div class="form-group text-center">
+
+                            <button type="submit" class="btn btn-blue btn-block">{{ boshlash.boshlash }}</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--======================================== 
+
+           About Us
+
+    ========================================-->
+
+
+
+    <section id="about" class="section-padding">
+
+        <div class="container">
+
+            <h2>{{ biz_haqimizda.biz_haqimizda }}</h2>
+
+            <p>{{ tekst.tekst }}</p>
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="icon-box">
+
+                        <i class="material-icons">favorite</i>
+
+                        <h4>{{ oson.oson }}</h4>
+
+                        <p>{{ text1.text1 }}</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="icon-box">
+
+                        <i class="material-icons">flash_on</i>
+
+                        <h4>{{ kuchli.kuchli }}</h4>
+
+                        <p>{{ text2.text2 }}</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="icon-box">
+
+                        <i class="material-icons">settings</i>
+
+                        <h4>{{ qulay.qulay }}</h4>
+
+                        <p>{{ text3.text3 }}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--======================================== 
+
+           Story
+
+    ========================================-->
+
+
+
+    <section id="story">
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <!-- Img -->
+
+                <div class="col-md-6 story-bg">
+
+                </div>
+
+                <!-- Story Caption -->
+
+                <div class="col-md-6">
+
+                    <div class="story-content">
+
+                        <h2>{{ yuksalish_siri.yuksalish_siri }}</h2>
+
+                        <p class="story-quote">
+
+                            {{ tekst2.tekst2 }}
+
+                        </p>
+
+                        <div class="story-text">
+
+                            <p>{{ tekst2.tekst2 }}</p>
+
+                        </div>
+
+                        <a href="#" class="btn btn-white">{{ organish.organish }}</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--======================================== 
+
+           Services
+
+    ========================================-->
+
+
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2>{{ hizmat.hizmat }}</h2>
+            <p>{{ tekst1.tekst1 }}</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <i class="material-icons">thumb_up</i>
+                        <h4>{{ zor.zor }}</h4>
+                        <p>{{ tekst3.tekst3 }}</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <i class="material-icons">euro_symbol</i>
+                        <h4>{{ alo.alo }}</h4>
+                        <p>{{ tab.tab }}</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <i class="material-icons">forum</i>
+                        <h4>{{ qollash.qollash }}</h4>
+                        <p>{{ tekst4.tekst4 }}</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box">
+                        <i class="material-icons">view_carousel</i>
+                        <h4>{{ oqish.oqish }}</h4>
+                        <p>{{ talim_olish.talim_olish }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--======================================== 
+
+           Features
+
+    ========================================-->
+
+
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>{{ title.title}}</h2>
+                    <p>{{ text.text }}</p>
+                    <hr>
+                    <div class="feat-media">
+                        <!-- Feature -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="material-icons">monetization_on</i>
+                                </a>
+                            </div>
+                        {% for i in tittle_1 %}
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ i.tittle_1 }}</h4>
+                                <p>{{ i.text_1 }}</p>
+                            </div>
+                        {% endfor %}
+                        </div>
+
+                        <!-- Feature -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="material-icons">access_time</i>
+                                </a>
+                            </div>
+                        {% for i in tittle_2 %}
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ i.tittle_2 }}</h4>
+                                <p>{{ i.text_2 }}</p>
+                            </div>
+                        {% endfor %}
+                        </div>
+
+                        <!-- Feature -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <i class="material-icons">computer</i>
+                                </a>
+                            </div>
+                        {% for i in tittle_3 %}
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ i.tittle_3 }}</h4>
+                                <p>{{ i.text_3 }}</p>
+                            </div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--======================================== 
+
+           Price
+
+    ========================================-->
+
+
+
+    <section id="price" class="section-padding">
+            <div class="container">
+                {% for i in real %}
+                    <h2>{{ i.tittle }}</h2>
+                    <p>{{ i.text }}</p>
+                {% endfor %}
+            <div class="row">
+                <!-- Pricing Start Here -->
+                    
+                    <div class="pricing-container">
+                        {% for i in prices %}
+                            <div class="col-md-4">
+                                <!--== MULTIPLE USER: Plan ==-->
+                                
+                                    <div class="plan active">
+                                        <div class="pricing-header">
+                                            <h3>{{ i.name }}</h3>
+                                            <h3>
+                                            <span class="currency">{{ i.price }}</span>
+                                            </h3>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <ul class="list-unstyled">
+                                                <p>{{ i.text }}</p>
+                                            </ul>
+                                        </div>
+                                        <div class="pricing-footer">
+                                            <a href="#" class="btn btn-blue">{{ i.button }}</a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                            </div>
+                        {% endfor %}    
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+
+    <!--======================================== 
+
+           Team
+
+    ========================================-->
+
+
+
+    <section id="team" class="section-padding">
+        
+        
+        <div class="container">
+            {% for i in comanda %}
+                <h2>{{ i.tittle }}</h2>
+                <p>{{ i.text }}</p>
+            {% endfor %}
+            <div class="row">
+                {% for i in comandainfo %}
+                    <div class="col-md-6 col-lg-3">
+                        
+                        <!--**Team-Member**-->
+                        
+                            <div class="thumbnail team-member">
+                                <img src="{{ i.image.url }}" class="img-responsive img-circle" alt="team-1">
+                                <div class="caption">
+                                    <h4>{{ i.name }}</h4>
+                                    <p>{{ i.text_2 }}</p>
+                                    <hr>
+                                    <div class="team-social">
+                                        <ul class="liste-unstyled">
+                                            <li><a href="#facebook">{{ i.fb_icon  }}<i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#twitter">{{ i.tw_icon  }}<i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#linkedin">{{ i.linkedIn_icon  }}<i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#instagram">{{ i.inst_icon   }}<i class="fa fa-instagram"></i></a></i>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </div class="col-md-6 col-lg-3"> 
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--======================================== 
+
+           Clients
+
+    ========================================-->
+
+
+
+    <section id="clients" class="section-padding">
+        <div class="container">
+            <div class="row">
+                {% for i in clients%}    
+                    <h2>{{ i.name }}</h2>
+                    <p>{{ i.text }}</p>
+                {% endfor %}
+                    <!--// Clients Images //-->
+                   
+                        <div class="clients-images">
+                            
+                                <div id="owl-clients">
+                                    {% for i in image %}
+                                        <div class="item"><img src="{{ i.image.url }}" class="center-block" alt="client"></div>
+                                    {% endfor %}
+                                </div>
+                           
+                        </div>
+                <!--// Clients Testimonials //-->
+                
+                    <div id="owl-testimonials">
+                        {% for i in about %}
+                            <div class="item">
+                                <i class="material-icons">mood</i>
+                                <p class="quote">{{ i.text }}</p>
+                                <h4>{{ i.about }}</h4>
+                            </div>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        {% for i in section %}
+            <div class="container">
+                <h2>{{ i.name }}</h2>
+                <p>{{ i.text }}</p>
+            </div>
+        {% endfor %}
+        <!-- Contact Info -->
+
+        <div class="container contact-info">
+            {% for i in section1 %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="material-icons">place</i>
+                                <h4>{{ i.adress_tittle }}</h4>
+                                <p>{{ i.adress_name }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="material-icons">phone</i>
+                            <h4>{{ i.call_tittle }}</h4>
+                            <p>{{ i.call_phone }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box">
+                            <i class="material-icons">Email</i>
+                            <h4>{{ i.email_name }}</h4>
+                            <p>{{ i.email }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Google Map -->
+
+        <div id="map"></div>
+
+        <!-- Contact Form -->
+
+        <div class="contact-forms">
+            <div class="container">
+                <h2>Drop us a Line</h2>
+                <form action="{% url 'add-contact' %}" class="contact-form" method="post">
+                    {% csrf_token %}
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-blue">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--======================================== 
+
+           Footer
+
+    ========================================-->
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="footer-caption">
+
+                    <img src="{% static 'assets/img/logo.png'%}" class="img-responsive center-block" alt="logo">
+
+                    <hr>
+
+                    <h5 class="pull-left">Vortex, &copy;2022 All rights reserved</h5>
+
+                    <ul class="liste-unstyled pull-right">
+
+                        <li><a href="#facebook"><i class="fa fa-facebook"></i></a></li>
+
+                        <li><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
+
+                        <li><a href="#linkedin"><i class="fa fa-linkedin"></i></a></li>
+
+                        <li><a href="#instagram"><i class="fa fa-instagram"></i></a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!--======================================== 
+
+           Modal
+
+    ========================================-->
+
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <h4 class="modal-title text-center" id="myModalLabel">{{ kirish.kirish }}</h4>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="signup-form">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Имя" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" placeholder="Пароль" required="required">
+
+                        </div>
+
+                        <div class="form-group text-center">
+
+                            <button type="submit" class="btn btn-blue btn-block">{{ ulanish.ulanish }}</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer text-center">
+
+                    <a href="#">Забыли ли вы пароль?/</a>
+
+                    <a href="#">Зарегистрироваться</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="{% static 'assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets/js/plugins/owl-carousel/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'assets/js/plugins/bootsnav_files/js/bootsnav.js'%}"></script>
+    <script src="{% static 'assets/js/plugins/typed.js-master/typed.js-master/dist/typed.min.js'%}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static 'assets/js/plugins/Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js'%}"></script>
+    <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+
+
+</html>
